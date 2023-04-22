@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            text-align: center;
+            color: aliceblue;
+            font-size: 16px;
+        }
+        h1{
+            color: aliceblue;
+            text-shadow: 0 0 20px blue,0 0 20px blue,0 0 20px white;
+
+        }
+        .rid{
+            margin-top: 20rem;
+        }
+        .flt{
+            background-color: rgb(240, 248, 255,0.9);
+            padding: 10rem;
+            margin: 0 4rem;
+            color: black;
+            border-radius: 2rem;
+            position: relative;
+            top: -9rem;
+        }
+        input{
+            color: black;
+            font-size: 2rem;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            border: none;
+            background: transparent;
+            border-bottom: 3px solid black;
+        }
+        .cls{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Treasure HunT</h1>
+    <div class="rid">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. A, repellendus.
+    </div>
+    <div class="flt" id="flt">
+        <input type="text" id="code" placeholder="Enter your Code...">
+            <br> <br>
+            <button onclick="myFunction()">Try it</button>
+            <div id="msg"></div>
+    </div>
+    <div class="ss">
+
+    </div>
+    <script>
+        function myFunction(){
+        var c = document.getElementById('code').value;
+        console.log(c);
+        if(c=='5454'){
+                var element = document.getElementById("flt");
+                element.style.display="none";
+            }
+        else{
+                var ms = document.getElementById('msg');
+                ms.innerHTML="WRONG CODEE";
+            }
+        }
+
+    </script>
+</body>
+</html>
