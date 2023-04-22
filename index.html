@@ -20,22 +20,26 @@
             font-size: 4rem;
         }
         .rid{
-            margin-top: 15rem;
+            margin-top: 4rem;
             font-size: 2rem;
-            color: black;
+            color: rgb(10, 10, 10);
+            font-weight: bold;
+            text-shadow: 0 0 20px brown,0 0 20px brown,0 0 20px black,0 0 20px black;
+            padding: 0 0.5rem;
         }
         .flt{
-            background-color: rgba(22, 23, 23, 1);
-            padding: 10rem;
-            margin: 0 4rem;
-            color: white;
-            border-radius: 2rem;
+            background-color: black;
             position: relative;
             top: -9rem;
+            border-radius: 2rem;
+            padding: 2rem;
+        }
+        .in{
+            font-size: 1.5rem;
         }
         input{
             color: wheat;
-            font-size: 2rem;
+            font-size: 9rem;
             text-align: center;
             font-family: 'Times New Roman', Times, serif;
             border: none;
@@ -54,8 +58,16 @@
         .cls{
             display: none;
         }
-        img{
-            width: 100vw;
+        @media screen and (max-width:400px) {
+            body{
+                font-size: 8px;
+            }
+            input{
+                font-size: 1rem;
+            }
+            .flt{
+                padding: 5rem;
+            }
         }
     </style>
 </head>
@@ -65,7 +77,7 @@
         Lorem ipsum dolor sit amet consectetur adipisicing elit. A, repellendus.
     </div>
     <div class="flt" id="flt">
-        <input type="text" id="code" placeholder="Enter your Code...">
+        <input type="text" id="code" class="in" placeholder="Enter your Code...">
             <br> <br>
             <button onclick="myFunction()">Enter</button>
             <div id="msg"></div>
