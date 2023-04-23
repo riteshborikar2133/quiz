@@ -7,7 +7,7 @@
     <title>Document</title>
     <style>
         body{
-            background:url(p1.jpg);
+            background:url('/p1.jpg');
             background-size: cover;
             background-color: black;
             text-align: center;
@@ -32,12 +32,20 @@
             background-color: black;
             position: relative;
             top: -8rem;
-            margin: 0 1rem;
+            /* margin: 0 1rem; */
             border-radius: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
             padding: 2rem;
         }
         .in{
             font-size: 1.5rem;
+            
+        }
+        .ins{
+            width: 100%;
         }
         input{
             color: wheat;
@@ -72,6 +80,7 @@
             }
             .in{
                 font-size: 1.2rem;
+
             }
         }
     </style>
@@ -82,7 +91,9 @@
         Lorem ipsum dolor sit amet consectetur adipisicing elit. A, repellendus.
     </div>
     <div class="flt" id="flt">
-        <input type="text" id="code" class="in" placeholder="Enter your Code...">
+        <div class="ins">
+            <input type="text" id="code" class="in" placeholder="Enter your Code...">
+        </div>
             <br> <br>
             <button onclick="myFunction()">Enter</button>
             <div id="msg"></div>
